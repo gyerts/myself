@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="page-header">
+		<h1 id="">Timeline</h1>
+	</div>
+	<div id="timeline"><div class="row timeline-movement timeline-movement-top">
+    <div class="timeline-badge timeline-future-movement">
+        <a href="#">
+            <span class="glyphicon glyphicon-plus"></span>
+        </a>
+    </div>
+    <div class="timeline-badge timeline-filter-movement">
+        <a href="#">
+            <span class="glyphicon glyphicon-time"></span>
+        </a>
+    </div>
+</div>
+
+<div class="row timeline-movement">
+    {% for item in context.timeline %}
+        {% if "education" == item.item_type %}
+            {% include "timeline_parts/items/education.html" %}
+        {% endif %}
+
+        {% if "work_experience" == item.item_type %}
+            {% include "timeline_parts/items/work_experience.html" %}
+        {% endif %}
+
+        {% if "executed_programming_jobs" == item.item_type %}
+            {% include "timeline_parts/items/executed_programming_job.html" %}
+        {% endif %}
+
+        {% if "new_time_mark" == item.item_type %}
+            {% include "timeline_parts/timeline-badge.html" with date=item.date %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+</div>
+</div>

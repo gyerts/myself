@@ -1,0 +1,27 @@
+</div>  <!--end of previous div.timeline-movement-->
+<div class="row timeline-movement">
+
+
+<div class="timeline-badge blue first">
+    {% if date.year %}
+        <span class="timeline-balloon-date-year">{{ date.year }}</span>
+    {% endif %}
+
+    {% if date.month %}
+        <span class="timeline-balloon-date-month">{{ date.month }}</span>
+    {% endif %}
+</div>
+
+{% if end_date %}
+
+<div class="timeline-badge red second">
+    {% if end_date.year %}
+        <span class="timeline-balloon-date-year">{{ end_date.year }}</span>
+    {% endif %}
+
+    {% if end_date.month %}
+        <span class="timeline-balloon-date-month">{{ end_date.month }}</span>
+    {% endif %}
+</div>
+
+{% endif %}

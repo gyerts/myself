@@ -1,0 +1,253 @@
+{
+  "about_me": {
+    "name": "Yuriy Gyerts",
+    "date_birth": {
+        "day": "01",
+        "month": "JAN",
+        "year": "1987"
+      }
+  },
+  "timeline": [
+    {
+      "item_type": "education",
+      "name": "High Vocational School Of Marine Transport",
+      "description": "Got at sea oriented knowledge",
+      "type": "college",
+      "start_date": {
+        "day": "01",
+        "month": "SEP",
+        "year": "2002"
+      },
+      "end_date": {
+        "day": "01",
+        "month": "MAY",
+        "year": "2006"
+      }
+    },
+
+    {
+      "item_type": "work_experience",
+      "company": "Alpha Navigation",
+      "position": "Able Seaman",
+      "description": {
+        "short_description": "Got at sea oriented knowledge",
+        "responsibilities": [
+          "швартовка судна",
+          "контроль за погрузкой/разгрузкой его",
+          "вахта на мостике",
+          "поддержание судна в чистом состоянии",
+          "управление судном"
+        ]
+      },
+      "start_date": {
+        "day": "01",
+        "month": "JAN",
+        "year": "2007"
+      },
+      "end_date": {
+        "day": "01",
+        "month": "JAN",
+        "year": "2012"
+      }
+    },
+
+    {
+      "item_type": "education",
+      "name": "SHAG",
+      "description": "Got basic knowledge about basic programming concepts and C++",
+      "type": "courses",
+      "start_date": {
+        "day": "01",
+        "month": "MAY",
+        "year": "2013"
+      },
+      "end_date": {
+        "day": "01",
+        "month": "MAY",
+        "year": "2015"
+      }
+    },
+
+    {
+      "item_type": "work_experience",
+      "company": "Luxoft",
+      "position": "devops",
+      "description": {
+        "short_description": "Наиболее полезным на данной позицци оказалось ознакомление с процессами интеграции а также возможность автоматизировать некоторые аспекты моей работы. В то время я еще небыл знаком с системам автоматических билдов таких как Jenkins/Bamboo/Teamcity, потому я написал собственный CI с использованием фреймворка Django",
+        "responsibilities": [
+          "initiate dayly and weekly integration",
+          "integration processes automation using python3",
+          "remote controll using Pytty",
+          "creation of Yocto recipes for Yocto build"
+        ]
+      },
+      "tooling": [
+        "python 3",
+        "django",
+        "yocto",
+        "scm-perforce",
+        "putty",
+        "scm-git",
+        "jira",
+        "stash",
+        "confluence"
+      ],
+      "start_date": {
+        "day": "01",
+        "month": "JUN",
+        "year": "2015"
+      },
+      "end_date": {
+        "day": "01",
+        "month": "JUL",
+        "year": "2016"
+      }
+    },
+
+    {
+      "item_type": "work_experience",
+      "company": "Luxoft",
+      "position": "Python developer",
+      "description": {
+        "short_description": "Research project: Написание некого подобия AWS для компании Luxoft, я познакомился с такими технологиями как REST-API и SOA",
+        "responsibilities": [
+          "Develop admin-panel and web-view for web-services",
+          "Develop web-service 'user-manager'",
+          "Develop web-service 'web-services-manager'",
+          "Develop web-service 'project-manager'"
+        ]
+      },
+      "tooling": [
+        "scm-git",
+        "Native JS",
+        "jQuery",
+        "Ajax",
+        "json",
+        "bootstrap",
+        "CSS",
+        "HTML",
+        "jira",
+        "stash",
+        "confluence",
+        "REST-API",
+        "SOA"
+      ],"start_date": {
+        "day": "01",
+        "month": "JUL",
+        "year": "2016"
+      },
+      "end_date": {
+        "day": "01",
+        "month": "FEB",
+        "year": "2017"
+      }
+    },
+
+
+    {
+      "item_type": "work_experience",
+      "company": "Luxoft",
+      "position": "devops",
+      "description": {
+        "short_description": "Devops в четырех доменах",
+        "responsibilities": [
+          "планирование поставки фич",
+          "контроль за поставкой фич",
+          "ослеживание зависимостей",
+          "поддержка CMake системы в надлежащем состоянии",
+          "поддержка google tests",
+          "автоматизация статического анализа кода и репортинг несоответствий ответственному менеджеру"
+        ]
+      },
+      "tooling": [
+        "scm-git",
+        "git-submodules",
+        "git-hooks",
+        "google test/mock",
+        "automotive",
+        "jira",
+        "stash",
+        "confluence"
+      ],"start_date": {
+        "day": "01",
+        "month": "JAN",
+        "year": "2017"
+      },
+      "end_date": {
+        "day": "01",
+        "month": "JUN",
+        "year": "2017"
+      }
+    },
+
+    {
+      "item_type": "work_experience",
+      "company": "Luxoft",
+      "position": "Luxoft Trainer",
+      "description": {
+        "short_description": "Got status 'Luxoft Trainer'",
+        "responsibilities": [
+          "чтение курса по гиту"
+        ]
+      },
+      "tooling": [
+        "scm-git"
+      ],"start_date": {
+        "day": "01",
+        "month": "MAY",
+        "year": "2017"
+      },
+      "end_date": null
+    },
+
+    {
+      "item_type": "work_experience",
+      "company": "Luxoft",
+      "position": "Junior C++ Developer",
+      "description": {
+        "short_description": "Automotive development using C++/CommonAPI",
+        "responsibilities": [
+          "write google tests",
+          "implement inter-process features using CommonAPI as IPC"
+        ]
+      },
+      "tooling": [
+        "scm-git",
+        "google tests/mocks",
+        "C++11",
+        "boost",
+        "stl",
+        "CommonAPI",
+        "jira",
+        "stash",
+        "confluence"
+      ],"start_date": {
+        "day": "01",
+        "month": "MAY",
+        "year": "2017"
+      },
+      "end_date": null
+    },
+
+    {
+      "item_type": "executed_programming_jobs",
+      "name_of_project": "common-api-fidl-parser",
+      "link_to_git_repository": "https://github.com/gyerts/common-api-fidl-parser",
+      "description": "tool which parsing franca fidl file",
+      "using_languages": [
+        "python 3"
+      ],
+      "screen_shot": "common-api-fidl-parser.png",
+      "start_date": {
+        "day": "01",
+        "month": "MAY",
+        "year": "2017"
+      },
+      "end_date": {
+        "day": "01",
+        "month": "MAY",
+        "year": "2017"
+      }
+    }
+  ]
+}

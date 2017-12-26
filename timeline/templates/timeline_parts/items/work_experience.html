@@ -1,0 +1,29 @@
+{% include "timeline_parts/timeline-badge.html" with date=item.start_date end_date=item.end_date %}
+
+
+
+<div class="col-sm-offset-6 col-sm-6 timeline-item">
+<div class="row">
+<div class="col-sm-offset-1 col-sm-11 {% if not item.end_date %}now{% endif %}">
+<div class="timeline-panel debits">
+    <ul class="timeline-panel-ul">
+        <li><span class="importo">{{ item.company }}: {{ item.position }}</span></li>
+        <li>
+            <span class="causale">{{ item.description.short_description }}</span>
+            <h4>Responsibilities</h4>
+            <ul>
+            {% for resposibility in item.description.responsibilities %}
+                <li>{{ resposibility }}</li>
+            {% endfor %}
+            </ul>
+        </li>
+        <li>
+            {% for tool in item.tooling %}
+                <span class="label label-success">{{ tool }}</span>
+            {% endfor %}
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+</div>

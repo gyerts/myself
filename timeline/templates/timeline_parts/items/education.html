@@ -1,0 +1,14 @@
+{% include "timeline_parts/timeline-badge.html" with date=item.start_date end_date=item.end_date %}
+
+<div class="col-sm-6 timeline-item">
+<div class="row">
+<div class="col-sm-11">
+<div class="timeline-panel credits">
+    <ul class="timeline-panel-ul">
+        <li><span class="importo"> <span class="label label-info">{{ item.type }}</span> {{ item.name }}</span></li>
+        <li><span class="causale">{{ item.description }}</span> </li>
+    </ul>
+</div>
+</div>
+</div>
+</div>

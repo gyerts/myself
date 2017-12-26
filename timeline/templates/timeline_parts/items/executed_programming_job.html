@@ -1,0 +1,26 @@
+{% load staticfiles %}
+{% include "timeline_parts/timeline-badge.html" with date=item.start_date end_date=item.end_date %}
+
+<div class="col-sm-6 timeline-item">
+<div class="row">
+<div class="col-sm-11">
+<div class="timeline-panel debits">
+    <ul class="timeline-panel-ul">
+        <li><span class="importo">{{ item.name_of_project }}</span></li>
+        <li><span class="causale"><a href="{{ item.link_to_git_repository }}">{{ item.link_to_git_repository }}</a></span> </li>
+        <li><span class="causale">{{ item.description }}</span> </li>
+        <li>
+            <p>
+                {% for language in item.using_languages %}
+                    <span class="label label-success">{{ language }}</span>
+                {% endfor %}
+            </p>
+        </li>
+        <li>
+            <img src="{% static item.screen_shot %}" alt="{{ item.name_of_project }}">
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
